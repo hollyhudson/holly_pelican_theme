@@ -1,0 +1,32 @@
+<!doctype html>
+<!-- base template that all other pages inherit from -->
+<html lang="en-US">
+<head>
+
+	<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/style.css">
+	<title>Holly Hudson</title>
+
+</head>
+
+<body>
+
+	<!-- Header -->
+	<header class="top">
+		<!-- title area -->
+		<h1>Holly Hudson</h1>
+			<!-- top nav bar for social -->
+	</header>
+	
+	<aside>
+		<!-- Sidebar for about, resources, categories, tags -->
+		Placeholder text
+	</aside>
+
+	<main>
+		<!-- Project gallery or article area -->
+		{% block content %}{% endblock%}
+	</main>
+	
+</body>
+</html>

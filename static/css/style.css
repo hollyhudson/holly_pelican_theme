@@ -1,0 +1,65 @@
+/* only use quotes around attributes that include spaces */
+
+/* this makes all elements include padding so they have consistent sizing */
+* {
+  box-sizing: border-box;
+}
+
+/***** Theme-related colors and such *****/
+.emph-color {
+	color: orange;
+}
+
+/***** Large Sections ******/
+
+/* for the title area */
+.top {
+	width: 100%;
+	float: left;
+	padding: 10%;
+}
+
+/* main section for articles */
+main {
+	width: 75%;
+	float: left;
+}
+
+/* a column in the project gallery, 25% of page */
+.main-col-25 {
+	width: 25%;
+	float: left;
+	padding: 10px;
+}
+
+/* sidebar that contains the about, tags, and resources */
+aside {
+	width: 25%;
+	float: right;
+	padding: 10px;
+	border: 1px solid orange;
+	border-radius: 5px;
+}
+
+/***** Smaller Elements ******/
+
+.article-card-container {
+	width: 33.33%;
+	min-height: 400px;
+	float: left;
+	padding: 10px;
+}
+
+.article-card {
+	min-height: 380px;
+	border: 1px solid green;
+	border-radius: 10px;
+	padding: 10px;
+}
+
+.article-card-link {
+}
+
+.splash-container {
+	height: 200px;
+}
