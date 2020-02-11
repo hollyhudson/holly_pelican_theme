@@ -4,6 +4,7 @@
 <head>
 
 	<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/w3.css">
 	<link rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/style.css">
 	<title>Holly Hudson</title>
 
@@ -18,12 +19,7 @@
 			<!-- top nav bar for social -->
 	</header>
 	
-	<aside>
-		<!-- Sidebar for about, resources, categories, tags -->
-		Placeholder text
-	</aside>
-
-	<main>
+	<main class="w3-container">
 		<!-- Project gallery or article area -->
 		{% block content %}{% endblock%}
 	</main>

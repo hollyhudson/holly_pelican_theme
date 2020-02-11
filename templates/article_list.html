@@ -7,16 +7,16 @@
 		<!-- start a new row every 3rd article -->
 		{% if loop.index0 % 3 == 0 %}
 			<!-- start a new row in the article gallery -->
-			<div class="row">
+			<div class="w3-row-padding">
 		{% endif %}
 			
 			<!-- 
 				article gallery card content, a container is needed
 				for margins and spacing reasons
 			-->	
-			<div class="article-card-container">
-			<div class="article-card">
-				<a class="article-card-link" href="{{ SITEURL }}/{{ article.url }}">
+			<div class="w3-third">
+				<a href="{{ SITEURL }}/{{ article.url }}">
+				<div class="w3-card-4">
 					<!-- image part -->
 					{% if article.splash %}
 					<div class="splash-container" style="background-image:url({{ SITEURL}}/{{ article.splash }});background-position:center;background-size:cover;background-repeat:no-repeat;width:100%" alt="test">
@@ -24,16 +24,15 @@
 					{% endif %}
 
 					<!-- text part -->
-					<div>
+					<div class="card-text">
 						<p class="emph-color"><b>{{ article.title }}</b></p>
 						<p>{{ article.summary }}</p>
-						<div class="emph-color">more ...</div>
 					</div>
+				</div><!-- end of card -->
 				</a>
-			</div> <!-- end of article card -->
-			</div> <!-- end of article card container -->
+			</div><!-- end of column -->
 		
-		<!-- if we're on the third article card in a row, close the row div -->	
+		<!-- if we're on the 3rd article card in a row, close the row div -->	
 		{% if loop.index0 % 3 == 2 or loop.index == loop.length %}
 			</div> <!-- close row div -->
 		{% endif %}
