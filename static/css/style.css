@@ -1,5 +1,9 @@
 /* only use quotes around attributes that include spaces */
 
+/* Theme colors
+ * #FF7F00 orange
+ * #32CD32 lime green
+
 /* this makes all elements include padding so they have consistent sizing */
 * {
   box-sizing: border-box;
@@ -7,16 +11,41 @@
 
 /***** Theme-related colors and such *****/
 .emph-color {
-	color: orange;
+	color: #FF7F00; /* orange */
+}
+
+/***** Social icons *****/
+.link-icon {
+    padding-right: 5px;
+}
+
+.link-icon:hover {
+    color: #FF7F00; /* orange */
+}
+
+/***** Buttons ******/
+.button {
+	color: white;
+	background-color: #FF7F00; /* orange */
+	border: none;
+	border-radius: 10px;
+	box-shadow: 0px 0px 10px 2px grey;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	margin: 4px 2px;
+	padding: 5px;
 }
 
 /***** Large Sections ******/
 
-/* for the title area */
-.top {
+header {
+	padding: 20px;
 	width: 100%;
 	float: left;
-	padding: 10%;
+}
+
+nav {
 }
 
 /* main section for articles */
@@ -58,15 +87,18 @@ main {
 
 .w3-card-4:hover {
 	box-shadow: 0px 0px 10px 2px grey;
+	color: #FF7F00; /* orange */
 }
 
 .splash-container {
-	height: 200px;
+	height: 330px;
 	border-radius: 10px 10px 0px 0px;
 }
 
 .card-text {
-	padding: 8px;
+	padding-top: 8px;
+	padding-bottom: 10px;
+	padding-left: 10px;
 }
 
 .article-card-container {

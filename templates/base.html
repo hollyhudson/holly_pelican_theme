@@ -6,6 +6,7 @@
 	<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/w3.css">
 	<link rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/style.css">
+	<link rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/fork-awesome.css">
 	<title>Holly Hudson</title>
 
 </head>
@@ -16,7 +17,13 @@
 	<header class="top">
 		<!-- title area -->
 		<h1>Holly Hudson</h1>
-			<!-- top nav bar for social -->
+		<!-- top nav bar for social -->
+		<div class="social">
+			{% include 'social.html' %}
+		</div>
+		<nav>
+			{% include 'categories.html' %}
+		</nav>
 	</header>
 	
 	<main class="w3-container">

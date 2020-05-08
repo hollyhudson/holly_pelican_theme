@@ -15,7 +15,7 @@
 				for margins and spacing reasons
 			-->	
 			<div class="w3-third">
-				<a href="{{ SITEURL }}/{{ article.url }}">
+				<a href="{{ SITEURL }}/{{ category }}/{{ article.url }}">
 				<div class="w3-card-4">
 					<!-- image part -->
 					{% if article.splash %}
@@ -25,8 +25,7 @@
 
 					<!-- text part -->
 					<div class="card-text">
-						<p class="emph-color"><b>{{ article.title }}</b></p>
-						<p>{{ article.summary }}</p>
+						<p><h4>{{ article.title }}</h4></p>
 					</div>
 				</div><!-- end of card -->
 				</a>

@@ -1,0 +1,4 @@
+<!-- Nav bar of categories -->
+{% for category, articles in categories %}
+	<a class="button" href="{{ SITEURL }}/{{ category.url }}">{{ category.name }}</a>
+{% endfor %}

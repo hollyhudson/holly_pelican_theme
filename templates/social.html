@@ -1,0 +1,9 @@
+{% if SOCIAL %}
+
+<!-- Social icons -->
+		{% for s in SOCIAL %}
+			{% set iconattributes = '"fa fa-' ~ s[0] ~ ' fa-lg link-icon"' %}
+			<a href="{{ s[1] }}"><i class={{ iconattributes }}></i></a>
+		{% endfor %}
+<!-- end social icons -->
+{% endif %}
